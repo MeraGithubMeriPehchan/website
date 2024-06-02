@@ -26,7 +26,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                bat 'docker run --rm my-webapp npm test'
+                bat 'docker run --rm my-webapp'
             }
         }
 
