@@ -26,7 +26,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                bat 'docker run --rm my-webapp'
+                bat 'docker run --rm my-webapp .'
             }
         }
 
